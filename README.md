@@ -1,7 +1,7 @@
 # BOOKISH-NERD
 This is a website created for the people to help them find which book to read.
 Hacktoberfest-2021
-# BOOKISH-NERD ([Live Website](https://github.com/ParthJohri/BOOKISH-NERD/index.html))
+# BOOKISH-NERD ([Live Website](https://parthjohri.github.io/BOOKISH-NERD/index.html))
 
 
 **This is a beginner-friendly project to help you get started with your
