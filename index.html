@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Responsive Website Design</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="container">
+            <div class="navigation">
+                <img src="assets/img/reading.png" class="logo" alt="logo">
+                <nav>
+                    <ul id="menuList">
+                        <li><a href="">Books</a></li>
+                        <li><a href="">About</a></li>
+                        <li><a href="">Services</a></li>
+                        <li><a href="">Contact</a></li>
+                    </ul>
+                </nav>
+                <img src="assets/img/menu (1).png" class="menu-icon"alt="menu" onclick="toggleClick()">
+            </div>
+            <div class="row">
+                <div class="col1">
+                    <h1>Harry<br>Potter</h1>
+                    <h2>Half-Blood Prince</h2>
+                    <p>J.K. Rowling</p>
+                    <h3>$32</h3>
+                    <button class="button1" type="button">Buy Now 
+                        <img src="assets/img/right-arrow.png">
+                    </button>
+                </div>
+                <div class="col2">
+                    <img src="assets/img/WallpaperDog-725654.jpg" class="imgres" alt="">
+                    <div class="color-box"></div>
+                    <div class="addbtn sf">
+                        <img src="assets/img/plus.png" alt="">
+                        <p>Add to cart</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="social-media">
+                <a href="http://"><img src="assets/img/facebook copy.png" alt="" class="sf"></a>
+                <a href="http://"><img src="assets/img/instagram copy.png" alt="" class="si"></a>
+                <a href="https://www.linkedin.com/in/parthjohri07/"><img src="assets/img/linkedin copy.png" alt="" class="sl"></a>
+                <a href="https://github.com/ParthJohri"><img src="assets/img/github.png" alt="" class="sg"></a>
+            </div>
+        </div>
+        <script>
+            var menuList=document.getElementById("menuList");
+
+            menuList.style.maxHeight="0px";
+
+            function toggleClick(){
+                if( menuList.style.maxHeight=="0px")
+                {
+                    menuList.style.maxHeight="130px";
+                }
+                else
+                {
+                    menuList.style.maxHeight="0px";
+                }
+            }
+        </script>
+    </body>
+</html>
