@@ -23,24 +23,29 @@
                 </nav>
                 <img src="assets/img/menu (1).png" class="menu-icon"alt="menu" onclick="toggleClick()">
             </div>
-            <div class="row">
-                <div class="col1">
-                    <h1>Harry<br>Potter</h1>
-                    <h2>Half-Blood Prince</h2>
-                    <p>J.K. Rowling</p>
-                    <h3>$32</h3>
-                    <button class="button1" type="button">Buy Now 
-                        <img src="assets/img/right-arrow.png">
-                    </button>
-                </div>
-                <div class="col2">
-                    <img src="assets/img/WallpaperDog-725654.jpg" class="imgres" alt="">
-                    <div class="color-box"></div>
-                    <div class="addbtn sf">
-                        <img src="assets/img/plus.png" alt="">
-                        <p>Add to cart</p>
+            <div id="home">
+                <div class="row">
+                    <div class="col1">
+                        <h1>Harry<br>Potter</h1>
+                        <h2>Half-Blood Prince</h2>
+                        <p>J.K. Rowling</p>
+                        <h3>$32</h3>
+                        <button class="button1" type="button">Buy Now 
+                            <img src="assets/img/right-arrow.png">
+                        </button>
+                    </div>
+                    <div class="col2">
+                        <img src="assets/img/WallpaperDog-725654.jpg" class="imgres" alt="">
+                        <div class="color-box"></div>
+                        <div class="addbtn sf">
+                            <img src="assets/img/plus.png" alt="">
+                            <p>Add to cart</p>
+                        </div>
                     </div>
                 </div>
+            </div>
+            <div id="books">
+                
             </div>
             
             <div class="social-media">
@@ -53,6 +58,8 @@
         <script>
             var menuList=document.getElementById("menuList");
 
+            var page = "home";
+            
             menuList.style.maxHeight="0px";
 
             function toggleClick(){
