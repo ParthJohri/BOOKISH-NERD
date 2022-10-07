@@ -57,8 +57,34 @@
         </div>
         <script>
             var menuList=document.getElementById("menuList");
-
-            var page = "home";
+            
+            var home = document.getElementById("home");
+            var books = document.getElementById("books");
+            
+            var bookList = {
+                "Mistborn Era 1": {
+                    type: "series",
+                    author: "Brandon Sanderson",
+                    img: "https://miro.medium.com/max/602/0*QbZ4O-ZiY_I5YHct"
+                },
+                "Harry Potter": {
+                    type:"series",
+                    author: "J. K. Rowling",
+                    img: "https://bjs.scene7.com/is/image/bjs/260936?$bjs-Zoom$"
+                }
+            };
+            
+            function books(){
+                home.style.display = "none";
+                books.style.display = "block";
+                
+                //let bookCounter
+                
+                for(let book of bookList){
+                    let el = document.createElement("div")
+                    el.className = "book-info-card"
+                }   
+            }
             
             menuList.style.maxHeight="0px";
 
