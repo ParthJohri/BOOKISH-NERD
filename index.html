@@ -12,11 +12,11 @@
     <body>
         <div class="container">
             <div class="navigation">
-                <img src="assets/img/reading.png" class="logo" alt="logo">
+                <img src="assets/img/reading.png" class="logo" alt="logo" onclick="homePage()">
                 <nav>
                     <ul id="menuList">
                         <li><a href="javascript:bookListPage()">Books</a></li>
-                        <li><a>About</a></li>
+                        <li><a href="">About</a></li>
                         <li><a href="">Services</a></li>
                         <li><a href="">Contact</a></li>
                     </ul>
@@ -49,6 +49,21 @@
 
                 </div>
             </div>
+            <div id="book">
+                <div id="book-main-content">
+                    <div class="flex-spacer"></div>
+                    <img id="book-img">
+                    <div class="flex-spacer"></div>
+                    <div id="book-main-info">
+                        <div id="book-title">Test</div>
+                        <div id="book-info">
+
+                        </div>
+                    </div>
+                    <div class="flex-spacer"></div>
+                    <div class="flex-spacer"></div>
+                </div>
+            </div>
             <div class="social-media">
                 <a href="http://"><img src="assets/img/facebook copy.png" alt="" class="sf"></a>
                 <a href="http://"><img src="assets/img/instagram copy.png" alt="" class="si"></a>
@@ -56,84 +71,6 @@
                 <a href="https://github.com/ParthJohri"><img src="assets/img/github.png" alt="" class="sg"></a>
             </div>
         </div>
-        <script>
-            var menuList=document.getElementById("menuList");
-            
-            var home = document.getElementById("home");
-            var books = document.getElementById("books");
-            var bookCont = document.getElementById("book-list-container")
-            
-            var bookList = {
-                "Mistborn Era 1": {
-                    type: "series",
-                    author: "Brandon Sanderson",
-                    img: "https://miro.medium.com/max/602/0*QbZ4O-ZiY_I5YHct",
-                    links: []
-                },
-                "Mistborn Era 2": {
-                    type: "series",
-                    author: "Brandon Sanderson",
-                    img: "https://somethingofthebook.files.wordpress.com/2020/01/d021c-20190806_120411.jpg?w=1024&h=514",
-                    links: []
-                },
-                "Harry Potter": {
-                    type:"series",
-                    author: "J. K. Rowling",
-                    img: "https://bjs.scene7.com/is/image/bjs/260936?$bjs-Zoom$",
-                    links: []
-                },
-                "Lord of the Rings": {
-                    type: "series",
-                    author: "J. R. R. Tolkien",
-                    img: "https://media.newyorker.com/photos/590957adebe912338a373ad0/master/w_2560%2Cc_limit/LOTRcovers_opt.jpg",
-                    links: []
-                },
-                "The Hobbit": {
-                    type: "single",
-                    author: "J. R. R. Tolkien",
-                    img: "https://www.thoughtco.com/thmb/e-CNNgdlzVR6L3cecKWIZeA75YQ=/735x0/ScreenShot2019-03-06at2.19.49PM-5c8049af46e0fb00011bf42b.jpg",
-                    links: []
-                },
-                "Chronicles of Narnia": {
-                    type:"series",
-                    author: "C. S. Lewis",
-                    img: "https://images.booksense.com/images/880/244/9780060244880.jpg",
-                    links: []
-                }
-            };
-            
-            function bookListPage(){
-                home.style.display = "none";
-                books.style.display = "block";
-                bookCont.innerHTML=""
-                
-                //let bookCounter
-                
-                for(let book in bookList){
-                    let el = document.createElement("div")
-                    el.className = "info-card"
-                    el.innerHTML = `
-                    <div class = "flex-spacer"></div>
-                    <div class = "info-card-img-container"><img class = "info-card-img" src = "${ bookList[book].img }"></div>
-                    <div class = "flex-spacer"></div>
-                    <div class = "info-card-title"> ${ book } </div>
-                    `
-                    bookCont.appendChild(el)
-                }   
-            }
-            
-            menuList.style.maxHeight="0px";
-
-            function toggleClick(){
-                if( menuList.style.maxHeight=="0px")
-                {
-                    menuList.style.maxHeight="130px";
-                }
-                else
-                {
-                    menuList.style.maxHeight="0px";
-                }
-            }
-        </script>
+        <script src="main.js"></script>
     </body>
 </html>

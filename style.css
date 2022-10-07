@@ -16,9 +16,12 @@
 .info-card-title {
     color: white;
     font-family: serif;
-    font-size: 25px;
-    margin-bottom: 15px;
-    margin-top: 15px;
+    font-size: 20px;
+}
+.info-card-author {
+    color: white;
+    font-size: 15px;
+    text-overflow: ellipsis;
 }
 .info-card-img {
     width: 100%;
@@ -29,7 +32,6 @@
     width: 100%;
     overflow: hidden;
     height: 75%;
-    margin-top: 10px;
     background: white;
 }
 .flex-spacer {
@@ -40,6 +42,26 @@
     flex-direction: row;
     justify-content: center;
     flex-wrap: wrap;
+}
+#book-title {
+    color:white;
+    font-size: 30px;
+}
+#book-main-content {
+    display: flex;
+    flex-direction: row;
+}
+#book-info {
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+#book-img {
+    width: 40%;
+}
+.book-info-item {
+    margin: 10px;
+    font-size: 20px;
 }
 
 *{
