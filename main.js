@@ -126,3 +126,16 @@ function toggleClick(){
         menuList.style.maxHeight="0px";
     }
 }
+document.addEventListener("DOMContentLoaded", function() {
+    const queryString = window.location.search;
+    const urlParams = new URLSearchParams(queryString);
+    const username = urlParams.get('username');
+
+    // Verify if the username is correctly retrieved
+    // console.log(username);
+
+    // Update the content of the <p> tag
+    let p=document.getElementById('Username');
+    // console.log(p);
+    p.innerHTML=`Hello ${username}`
+});
