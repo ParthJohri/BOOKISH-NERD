@@ -192,3 +192,15 @@ button.ghost{
     transform: translateX(20%);
     /* background-color: #333; */
 }
+
+.back-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    cursor: pointer;
+}
+
+.back-icon {
+    width: 50px; 
+    height: auto;
+}
