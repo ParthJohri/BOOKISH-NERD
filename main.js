@@ -135,7 +135,10 @@ document.addEventListener("DOMContentLoaded", function() {
     // console.log(username);
 
     // Update the content of the <p> tag
-    let p=document.getElementById('Username');
-    // console.log(p);
-    p.innerHTML=`Hello ${username}`
+    if(username!=null){
+        console.log("NULL");
+        let p=document.getElementById('Username');
+        // console.log(p);
+        p.innerHTML=`Hello ${username}`
+    }
 });
