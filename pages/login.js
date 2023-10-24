@@ -24,3 +24,7 @@ document.addEventListener("DOMContentLoaded", function() {
             window.location.href = `../index.html?username=${username}`;
         });
 });
+
+document.querySelector('.back-button').addEventListener('click', function() {
+    window.location.href = '../index.html';
+});
