@@ -136,8 +136,8 @@ document.addEventListener("DOMContentLoaded", function() {
 
     // Update the content of the <p> tag
     if(username!=null){
-        console.log("NULL");
-        let p=document.getElementById('Username');
+        // console.log("NULL");
+        // let p=document.getElementById('Username');
         // console.log(p);
         p.innerHTML=`Hello ${username}`
     }
