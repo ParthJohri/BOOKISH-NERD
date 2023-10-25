@@ -137,5 +137,9 @@ document.addEventListener("DOMContentLoaded", function() {
     // Update the content of the <p> tag
     let p=document.getElementById('Username');
     // console.log(p);
-    p.innerHTML=`Hello ${username}`
+    if (username) {
+        p.innerHTML = `Hello ${username}`;
+    } else {
+        p.innerHTML = "Hello";
+    }
 });
